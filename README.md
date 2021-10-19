@@ -14,7 +14,8 @@ docker compose up
 
 Then browse to [localhost](http://localhost:7474/browser/)
 Add the following details: 
+```
 username: neo4j
 password: 123
-
+```
 You are now ready for the session!
