@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    network_mode: "bridge"
+    environment:
+      NEO4J_AUTH: 'neo4j/123'
+      NEO4JLABS_PLUGINS: '["apoc"]'
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j:/data:/data
+      - neo4j:/logs:/logs
+      - neo4j:/import:/var/lib/neo4j/import
+      - neo4j:/plugins:/plugins
+volumes:
+  neo4j:
