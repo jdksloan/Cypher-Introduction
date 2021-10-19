@@ -12,7 +12,8 @@ First start the docker compose file
 docker compose up
 ```
 
-Then browse to [localhost](http://localhost:7474/browser/)
+Browse to [localhost](http://localhost:7474/browser/)  
+
 Add the following details: 
 ```
 username: neo4j
